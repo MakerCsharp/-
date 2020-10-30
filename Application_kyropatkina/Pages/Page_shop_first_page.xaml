@@ -1,61 +1,49 @@
-﻿<Page x:Class="Application_kyropatkina.Pages.Page_shop_first_page"
+﻿<Page
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Application_kyropatkina.Pages"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Application_kyropatkina.Pages.Page_shop_first_page"
       mc:Ignorable="d" 
       d:DesignHeight="476" d:DesignWidth="800"
-      Title="Page_shop_first_page">
+      Title="Page_shop_first_page" Background="#FAD275">
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="32*"/>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="125*"/>
+            <ColumnDefinition Width="172"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Frame x:Name="frame_navigate" Grid.Column="1"   />
+        <!--width-800,heigth - 476-->
+
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="114*"/>
+                <RowDefinition Height="65*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="381*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Button Content="Button" HorizontalAlignment="Left" Height="20" Margin="140,0,0,0" VerticalAlignment="Top" Width="20" BorderBrush="White" Background="White" Foreground="White"/>
-
-            </Grid>
-            <Grid Grid.Row="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="5*"/>
-                    <RowDefinition Height="5*"/>
-                    <RowDefinition Height="5*"/>
-                    <RowDefinition Height="5*"/>
-                    <RowDefinition Height="94*"/>
-                </Grid.RowDefinitions>
-
-                <Grid Grid.Row="1">
-                    <TextBox  x:Name="Game_search"  />
-                </Grid>
-
-                <Grid Grid.Row="0">
-                    <TextBlock Text="Поиск"/>
-                </Grid>
-                <TextBlock HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="Жанры" VerticalAlignment= "Top" Height="20" Width="160"/>
-                <ScrollViewer HorizontalAlignment="Left" Height="376" Grid.Row="4" VerticalAlignment="Top" Width="160" />
+            <Grid Grid.Row="2" Background="#F3722C" >
 
             </Grid>
 
+            <ListView   Grid.Row="2"  >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Grid Grid.Row="0" Background="#F7B926" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Поиск" Foreground="White" FontSize="17"/>
+            </Grid>
+            <TextBox Grid.Row="1"   CaretBrush="#FFFAD275" Foreground="White" Background="#FA9461" />
+
         </Grid>
-        <Grid Grid.Column="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="115*"/>
-                <RowDefinition Height="25*"/>
-                <RowDefinition Height="336*"/>
-            </Grid.RowDefinitions>
-            <ListView Grid.Row="0"/>
-            <ListView Grid.Row="2"/>
-        </Grid>
+
     </Grid>
 </Page>

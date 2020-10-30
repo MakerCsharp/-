@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Application_kyropatkina.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="476" d:DesignWidth="800"
-      Title="Page_library" Loaded="Page_Loaded">
+      Title="Page_library" Loaded="Page_Loaded" Background="#43AA8B" >
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -14,22 +14,36 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="62*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="frame_navigate" Grid.Column="2" /><!--width-800,heigth - 476-->
+        <Frame x:Name="frame_navigate" Grid.Column="2"  />
+        <!--width-800,heigth - 476-->
 
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="114*"/>
+                <RowDefinition Height="65*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="381*"/>
             </Grid.RowDefinitions>
-            <ListView HorizontalAlignment="Left" Height="456" Grid.Row="1" VerticalAlignment="Top" Width="170">
+            <Grid Grid.Row="2" Background="#A9CC8E" >
+
+            </Grid>
+
+            <ListView   Grid.Row="2"  >
                 <ListView.View>
                     <GridView>
                         <GridViewColumn/>
                     </GridView>
                 </ListView.View>
             </ListView>
+            <Grid Background="#5FBFA2" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Поиск" Foreground="White" FontSize="17"/>
+            </Grid>
+            <TextBox Grid.Row="1"   CaretBrush="#FFFAD275" Foreground="White" Background="#40A083" />
 
         </Grid>
-        
+
     </Grid>
 </Page>

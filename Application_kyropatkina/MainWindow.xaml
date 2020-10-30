@@ -15,7 +15,7 @@
             <RowDefinition Height="411*"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Background="Gray">
+        <Grid Grid.Row="0" Background="#F9C74F">
             <Grid.RowDefinitions>
                 <RowDefinition Height="15*"/>
                 <RowDefinition Height="39*"/>
@@ -32,22 +32,24 @@
                 <ColumnDefinition Width="155*"/>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="155*"/>
-                <ColumnDefinition Width="75*"/>
-                <ColumnDefinition Width="45*"/>
-                <ColumnDefinition Width="26*"/>
+                <ColumnDefinition Width="27*"/>
+                <ColumnDefinition Width="69*"/>
+                <ColumnDefinition Width="50*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="1" Grid.Column="1" Content="Главная страница" x:Name="Page_first" Click="Show_Page_first" Height="Auto" Margin="0,3,0,4"  />
-            <Button Grid.Row="1" Grid.Column="3" Content="Сообщество"  x:Name="page_team"  Click="show_page_team" Height="Auto" Margin="0,3,0,4"/>
-            <Button Grid.Row="1" Grid.Column="5" Content="Моя страница"  x:Name="My_page" Height="Auto" Margin="0,3,0,4"  />
-            <Button Grid.Row="1" Grid.Column="7" Content="Бибилиотека"   x:Name="My_library" Click="show_my_page_library" Height="Auto" Margin="0,3,0,4"/>
-            <Rectangle Grid.Column="1" Fill="#FF5151CB" HorizontalAlignment="Left" Height="4" Grid.Row="3" Stroke="#FF5151CB" VerticalAlignment="Top" Width="155" Grid.RowSpan="2" RadiusX="2" RadiusY="2"/>
-            <Button  Grid.Column="9" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" >
-                <StackPanel Orientation="Horizontal"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="Главная страница" x:Name="Page_first" Click="Show_Page_first" Height="Auto" Margin="0,3,0,4" Background="#FFF3722C" BorderBrush="{x:Null}"  />
+            <Button Grid.Row="1" Grid.Column="3" Content="Сообщество"  x:Name="page_team"  Click="show_page_team" Height="Auto" Margin="0,3,0,4" BorderBrush="{x:Null}" Background="#FFF3722C"/>
+            <Button Grid.Row="1" Grid.Column="5" Content="Моя страница"  x:Name="My_page" Height="Auto" Margin="0,3,0,4" Background="#FFF3722C" BorderBrush="{x:Null}"  />
+            <Button Grid.Row="1" Grid.Column="7" Content="Бибилиотека"   x:Name="My_library" Click="show_my_page_library" Height="Auto" Margin="0,3,0,4" BorderBrush="{x:Null}" Background="#FFF3722C"/>
+            <Rectangle Grid.Column="1" Fill="#F94144" HorizontalAlignment="Left" Height="4" Grid.Row="3" VerticalAlignment="Top" Width="155" Grid.RowSpan="2" RadiusX="2" RadiusY="2"/>
+            <Button  Grid.Column="9" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Margin="1.5,3.5,6,3.5" Width="61.5" Background="#FFF3722C" BorderBrush="{x:Null}" >
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="image/other image/credit_card_64px.png"/>
+                </StackPanel>
             </Button>
 
 
         </Grid>
-        <Frame x:Name="page_shop"  Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="page_shop"  Grid.Row="1" NavigationUIVisibility="Hidden"  />
         <!--width-801,heigth-476-->
 
     </Grid>

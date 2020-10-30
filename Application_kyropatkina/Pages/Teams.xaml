@@ -9,28 +9,40 @@
       Title="Teams">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="29*"/>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="126*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="62*"/>
         </Grid.ColumnDefinitions>
+        <Frame x:Name="frame_navigate" Grid.Column="2"  Background="#43AA8B"/>
+        <!--width-800,heigth - 476-->
+
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="79*"/>
+                <RowDefinition Height="65*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="381*"/>
             </Grid.RowDefinitions>
-            <ListView HorizontalAlignment="Left" Height="395" Grid.Row="3" VerticalAlignment="Top" Width="145" >
+            <Grid Grid.Row="2" Background="#A9CC8E" >
+
+            </Grid>
+
+            <ListView   Grid.Row="2"  >
                 <ListView.View>
                     <GridView>
                         <GridViewColumn/>
                     </GridView>
                 </ListView.View>
             </ListView>
-            <TextBox Grid.Row="1"  />
+            <Grid Background="#43AA8B" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Поиск" Foreground="White" FontSize="17"/>
+            </Grid>
+            <TextBox Grid.Row="1"   CaretBrush="#FFFAD275" Foreground="White" Background="#277DA1" />
 
         </Grid>
-        <Frame Content="Frame" Grid.Column="2" x:Name="Teams_frame"/>
-        <!--Width -800 Heigth - 450-->
+
     </Grid>
 </Page>

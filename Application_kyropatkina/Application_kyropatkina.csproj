@@ -63,6 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="library\Data_base.cs" />
     <Compile Include="Pages\Pages\Page_game_on_library.xaml.cs">
       <DependentUpon>Page_game_on_library.xaml</DependentUpon>
     </Compile>
@@ -81,6 +82,9 @@
     <Compile Include="Pages\Teams.xaml.cs">
       <DependentUpon>Teams.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AUTO.xaml.cs">
       <DependentUpon>AUTO.xaml</DependentUpon>
     </Compile>
@@ -90,6 +94,10 @@
     <Compile Include="Windows\REG.xaml.cs">
       <DependentUpon>REG.xaml</DependentUpon>
     </Compile>
+    <Page Include="Dictionary1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -123,6 +131,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Teams.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +183,7 @@
     <Folder Include="image\level\" />
     <Folder Include="image\pegi\" />
     <Folder Include="image\white\" />
+    <Folder Include="Палитра цветов\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image\other image\credit_card_64px.png" />
