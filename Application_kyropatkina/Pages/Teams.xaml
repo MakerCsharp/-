@@ -10,10 +10,9 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="17*"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="63*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="frame_navigate" Grid.Column="2"  Background="#43AA8B"/>
+        <Frame x:Name="frame_navigate" Grid.Column="1"  Background="#43AA8B"/>
         <!--width-800,heigth - 476-->
 
         <Grid Grid.Column="0">
@@ -25,14 +24,6 @@
             <Grid Grid.Row="2" Background="#A9CC8E" >
 
             </Grid>
-
-            <ListView   Grid.Row="2"  >
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
             <Grid Background="#43AA8B" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="8*"/>

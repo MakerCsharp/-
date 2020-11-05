@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Application_kyropatkina.Windows"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Application_kyropatkina.Windows.Pation"
         mc:Ignorable="d"
-        Title="Pation" Height="347" Width="414"  WindowStartupLocation="CenterScreen"  WindowStyle="None" Background="#FF673AB7">
+        Title="Pation" Height="347" Width="414"  WindowStartupLocation="CenterScreen"    ResizeMode="NoResize" Background="#FF673AB7">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="35*"/>

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Application_kyropatkina.Pages;
+using Application_kyropatkina.Windows;
 
 namespace Application_kyropatkina
 {
@@ -39,6 +40,14 @@ namespace Application_kyropatkina
         private void show_my_page_library(object sender, RoutedEventArgs e)
         {
             page_shop.Navigate(new Page_library());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Pation pation = new Pation();
+            pation.Show();
+
+
         }
     }
 }

@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Application_kyropatkina.Pages.Pages;
 
-namespace Application_kyropatkina.Pages
+namespace Application_kyropatkina
 {
     /// <summary>
-    /// Логика взаимодействия для Page_shop_first_page.xaml
+    /// Логика взаимодействия для iStore.xaml
     /// </summary>
-    public partial class Page_shop_first_page : Page
+    public partial class iStore : Window
     {
-        public Page_shop_first_page()
+        public iStore()
         {
             InitializeComponent();
-        }
-
-        private void loaded_forma_wpf(object sender, RoutedEventArgs e)
-        {
-            frame_navigate.Navigate(new Page_list_game());
         }
     }
 }

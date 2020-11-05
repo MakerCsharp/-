@@ -7,6 +7,36 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="143" Margin="53,145.5,0,0" VerticalAlignment="Top" Width="299" Style="{DynamicResource ButtonStyle1}"/>
+
+        <Button   Height="85"  Width="195" Margin="-256,162,854,172">
+            <Grid Height="83"  Width="192">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="11*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="11*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="23*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <TextBlock Grid.Column="2" Grid.Row="1"  Text="" Margin="0,0,10,0" />
+                <TextBlock Grid.Column="2" Grid.Row="3"  Text="" Margin="0,0,10,0" />
+                <Image Grid.Column="1"  Grid.RowSpan="3" Grid.Row="1"/>
+            </Grid>
+        </Button>
+        <Grid HorizontalAlignment="Left" Height="25" Margin="250,145,0,0" VerticalAlignment="Top" Width="150">
+            <TextBlock  Text="" />
+        </Grid>
     </Grid>
 </Window>

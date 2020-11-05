@@ -11,10 +11,9 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="17*"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="63*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="frame_navigate" Grid.Column="2"  />
+        <Frame x:Name="frame_navigate" Grid.Column="1" Margin="10,0,0,0"  />
         <!--width-800,heigth - 476-->
 
         <Grid Grid.Column="0">

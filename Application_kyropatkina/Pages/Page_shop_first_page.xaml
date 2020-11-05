@@ -11,11 +11,11 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="172"/>
+            <ColumnDefinition Width="180"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="frame_navigate" Grid.Column="1"   />
-        <!--width-800,heigth - 476-->
+        <Frame x:Name="frame_navigate" Grid.Column="1" Loaded="loaded_forma_wpf"   />
+        <!--width-628,heigth - 476-->
 
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
@@ -23,17 +23,35 @@
                 <RowDefinition Height="30*"/>
                 <RowDefinition Height="381*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="2" Background="#F3722C" >
+            <Grid Grid.Row="2" Background="#F3722C">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="32*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="30*"/>
+                    <RowDefinition Height="236*"/>
+                </Grid.RowDefinitions>
+
+                <ComboBox x:Name="Genre" Grid.Row="3" Text="Жанры">
+                    <ListView x:Name="Genre_listview" >
+                        <Grid Width="150">
+                            <ListView>
+                         
+                                <TextBlock  Text="{Binding Path=NameGenre}" />
+                            </ListView>
+                           
+                        </Grid>
+                    </ListView>
+                </ComboBox>
+                <ComboBox x:Name="Platform"  Grid.Row="5" Text="Платформы">
+                    <ListView x:Name="Platform_listview">
+                       
+                    </ListView>
+                </ComboBox>
 
             </Grid>
-
-            <ListView   Grid.Row="2"  >
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
             <Grid Grid.Row="0" Background="#F7B926" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="8*"/>

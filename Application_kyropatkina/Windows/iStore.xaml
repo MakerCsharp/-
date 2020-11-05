@@ -1,0 +1,15 @@
+﻿<Window x:Class="Application_kyropatkina.iStore"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_kyropatkina"
+        mc:Ignorable="d"
+        Title="iStore" Height="197" Width="329" WindowStyle="None" ResizeMode="NoResize" >
+    <Grid>
+        <Image Source="/Application_kyropatkina;component/image/fone_page/fone_page.jpg" Stretch="UniformToFill" >
+
+        </Image>
+        <Rectangle Fill="#FF161661" HorizontalAlignment="Left" Height="70" Margin="80,60,0,0" VerticalAlignment="Top" Width="160" RadiusY="9.5" RadiusX="9.5"/>
+    </Grid>
+</Window>
